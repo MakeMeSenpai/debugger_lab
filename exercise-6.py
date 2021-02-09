@@ -1,20 +1,23 @@
 """Exercise 6: Using Objects"""
 
 class Person:
+    """person info for  introductions"""
     def __init__(self, name, age):
         self.name = name
-        self.age = age 
+        self.age = age
 
     def introduce_self(self):
+        """prints introduction"""
         print(f"I am {self.name} and I am {self.age} years old")
 
     def compare_to(self, other_person):
+        """prints age comparison"""
         if self.age > other_person.age:
             print(f'I am {self.age - other_person.age} years older than '
-            f'{person2.name}.')
+            + f'{person2.name}.')
         elif self.age < other_person.age:
             print(f'I am {other_person.age - self.age} years younger than '
-            f'{person2.name}.')
+            + f'{person2.name}.')
         else:
             print(f'I am the same age as {other_person.name}.')
 

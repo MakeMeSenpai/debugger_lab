@@ -2,7 +2,7 @@
 
 def calculate_average(list_of_nums):
     """Calculates the average of a list of numbers."""
-    total = 0       ### Set a breakpoint here! ###
+    total = 0 ### Set a breakpoint here! ###
     for num in list_of_nums:
         total += num
 
@@ -11,11 +11,11 @@ def calculate_average(list_of_nums):
 
 if __name__ == '__main__':
     # Call calculate_average
-    mylist = [2, 7, 3, 5, 11, 9]
-    result = calculate_average(mylist)
+    my_list = [2, 7, 3, 5, 11, 9]
+    result = calculate_average(my_list)
     print(result)
 
     # Call calculate_average a second time
-    anotherlist = [-2, 5, -3]
-    result2 = calculate_average(anotherlist)
+    another_list = [-2, 5, -3]
+    result2 = calculate_average(another_list)
     print(result2)

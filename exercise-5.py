@@ -1,14 +1,13 @@
 """Exercise 5: Stop on Exception"""
 
-def swap(lst, i, j):
+def swap(list, i, j):
     """Swap 2 items of a list in-place."""
-    lst[i], lst[j] = lst[j], lst[i]
+    list[i], list[j] = list[j], list[i]
 
 def bubble_sort(list_of_nums):
     """Sorts the list in-place using the Bubble Sort algorithm."""
-
     for iteration in range(len(list_of_nums)): # Do n times
-        for i in range(len(list_of_nums)):
+        for i in range(len(list_of_nums) - 1):
             if list_of_nums[i] > list_of_nums[i+1]:
                 swap(list_of_nums, i, i+1)
 
